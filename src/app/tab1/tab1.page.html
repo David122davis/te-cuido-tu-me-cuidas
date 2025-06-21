@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="center-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Te Cuido, Tú Me Cuidas</ion-card-title>
+        <ion-img
+          src="https://revistavive.com/wp-content/uploads/2020/02/AMOR-TIPOS.png"
+          alt="Imagen amor"
+        ></ion-img>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input [(ngModel)]="usuario" type="text" clearInput></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="contrasena" type="password" clearInput></ion-input>
+        </ion-item>
+
+<ion-button expand="block" class="btn-amarillo-pastel" (click)="onClick()">Ingresar</ion-button>
+        <ion-button expand="block" class="btn-amarillo-pastel"(click)="registrar()">Registrar nuevo usuario</ion-button>
+        <ion-button expand="block" color="danger" (click)="emergencia()">
+      Emergencia
+    </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

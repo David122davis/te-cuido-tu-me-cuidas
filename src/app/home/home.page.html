@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Esto es una Prueba</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar class="fondo-rosa-palo">
+      <ion-title size="large">¿Qué desea Hacer?</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Home page"></app-explore-container>
+
+  <div style="padding: 16px;">
+    <ion-button expand="block" class="btn-amarillo-pastel" (click)="onClick('Conocer datos de mi cita')">
+      Conocer datos de mi cita
+    </ion-button>
+
+    <ion-button expand="block" class="btn-amarillo-pastel" (click)="regresarHome()">
+      Regresar a Home
+    </ion-button>
+
+    <ion-button expand="block" class="btn-amarillo-pastel"(click)="comenzarCita()">
+      Comenzar Cita
+    </ion-button>
+
+    <ion-button expand="block" class="btn-amarillo-pastel"(click)="finalizarCita()">
+      Finalizar Cita
+    </ion-button>
+    <ion-button expand="block" class="btn-amarillo-pastel"(click)="DatosPersonales()">
+      Mis datos personales
+    </ion-button>
+
+    <ion-button expand="block" color="danger" (click)="emergencia()">
+      Emergencia
+    </ion-button>
+  </div>
+</ion-content>

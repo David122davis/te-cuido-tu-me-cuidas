@@ -1,0 +1,38 @@
+ion-card {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+ion-item h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #1565c0; /* Azul pastel fuerte */
+}
+
+ion-item p {
+  margin: 4px 0 0 0;
+  color: #424242; /* Gris oscuro para texto */
+  font-size: 1.1em;
+}
+ion-content {
+  --background: #f8c8dc; /* rosa palo */
+}
+.btn-amarillo-pastel {
+  --background: #f9e79f;
+  --color: black;
+  --background-activated: #d4c572; /* sombra al presionar */
+}
+.fondo-rosa-palo {
+  --background: #f8cdd6; /* rosa palo */
+  color: #4a148c; /* texto con buen contraste */
+}
+.btn-amarillo-pastel {
+  --background: #fff9c4; /* amarillo pastel */
+  --color: #4a148c; /* púrpura suave para contraste */
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive; /* fuente romántica */
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.507);
+  border-radius: 12px;
+}

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+          
+  </ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar class="fondo-rosa-palo">
+      <ion-title size="large">Detalles de mi Cita</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding" style="background-color: #f9f9fb;">
+  <ion-card style="background: #e3f2fd; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <ion-card-header>
+      <ion-card-title style="color: #1976d2; font-weight: 700;">Información de la Cita</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <h3>Nombre</h3>
+            <p>{{ nombre }}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h3>Fecha</h3>
+            <p>{{ fecha }}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h3>Hora</h3>
+            <p>{{ hora }}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h3>Lugar</h3>
+            <p>{{ lugar }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" class="btn-amarillo-pastel" style="margin-top: 30px; border-radius: 25px;" (click)="regresar()">
+    ← Regresar a Home
+  </ion-button>
+</ion-content>

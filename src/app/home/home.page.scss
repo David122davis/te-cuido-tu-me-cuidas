@@ -1,0 +1,46 @@
+
+ion-title {
+   color: #4a148c;
+}
+
+:root {
+  --background: #f8c8dc; /* rosa palo */
+}
+ion-content {
+  --background: #f8c8dc; /* rosa palo */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.btn-amarillo-pastel {
+  --background: #f9e79f;
+  --color: black;
+  --background-activated: #d4c572; /* sombra al presionar */
+}
+.btn-amarillo-pastel {
+  --background: #f9e79f;
+  --color: black;
+  --background-activated: #d4c572; /* sombra al presionar */
+}
+.btn-amarillo-pastel {
+  --background: #fff9c4; /* amarillo pastel */
+  --color: #4a148c; /* púrpura suave para contraste */
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive; /* fuente romántica */
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.507);
+  border-radius: 12px;
+}
+
+.romantic-font {
+  font-family: 'Dancing Script', cursive;
+}
+.fondo-rosa-palo {
+  --background: #f8cdd6; /* rosa palo */
+  color: #4a148c; /* texto con buen contraste */
+}
