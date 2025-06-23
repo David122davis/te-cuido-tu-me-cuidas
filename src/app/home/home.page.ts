@@ -19,7 +19,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
 })
 export class HomePage {
   citaDatos = {
-    nombre: 'Juan Perez',
+    nombre: 'Rosalba Maldonado',
     fecha: '2025-06-20',
     hora: '10:00 AM',
     lugar: 'Clínica Central'
@@ -61,7 +61,9 @@ export class HomePage {
   DatosPersonales() {
     this.router.navigate(['/tabs/tab3']);
   }
-
+irAFirma() {
+  this.router.navigate(['/tabs/tab4']);
+}
   emergencia() {
     alert(`🚨 ¡Emergencia activada!\n\n📞 Se está contactando con el 133 Carabineros de Chile\n📍 Su ubicación y la de su cita en "${this.citaDatos.lugar}" fueron enviadas al número de emergencia registrado.`);
   }

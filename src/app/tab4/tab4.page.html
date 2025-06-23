@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Firma de Consentimiento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>🤝 Consentimiento Mutuo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        Este consentimiento se realiza de forma voluntaria y libre de presiones. Ambas personas afirman estar de acuerdo con lo pactado.
+      </p>
+
+      <ion-item>
+        <ion-label position="stacked">Persona 1 (usuario)</ion-label>
+        <ion-input [value]="persona1" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Persona 2 (cita)</ion-label>
+        <ion-input [value]="persona2" readonly></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="success" (click)="firmar()">
+        Firmar Consentimiento
+      </ion-button>
+
+      <div *ngIf="firmado" style="margin-top: 20px;">
+        <ion-card color="light">
+          <ion-card-header>
+            <ion-card-title>✅ Consentimiento firmado</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><strong>{{ persona1 }}</strong> y <strong>{{ persona2 }}</strong> han firmado el consentimiento.</p>
+            <p>🕒 Fecha: {{ fecha }}</p>
+            <p>Gracias por su confianza mutua.</p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <ion-button expand="block" color="danger" (click)="emergencia()">
+        Emergencia
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

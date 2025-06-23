@@ -1,0 +1,24 @@
+ion-card-title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.fondo-rosa-palo {
+  --ion-background-color: #f7cac9; /* rosa palo pastel */
+  background-color: var(--ion-background-color);
+  color: #5a3e36; /* marrón suave para buen contraste */
+}
+
+ion-card {
+  background-color: #fff0f0; /* blanco rosado suave */
+  color: #5a3e36;
+}
+
+ion-button[color="primary"] {
+  --background: #f28a8a; /* rosa más intenso para botón */
+  --color: white;
+}
+
+ion-button[color="danger"] {
+  --background: #d9534f; /* rojo para emergencia */
+  --color: white;
+}

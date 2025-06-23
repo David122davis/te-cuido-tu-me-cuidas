@@ -37,10 +37,10 @@ import {
   ]
 })
 export class Tab2Page {
-  nombre: string = 'Rosalba Maldonado';
+  nombre: string = 'David Elizalde';
   fecha: string = '2025-06-20';
   hora: string = '15:30';
-  lugar: string = 'Clínica Central';
+  lugar: string = 'Parque Forestal';
 
   constructor(private router: Router) {}
 
