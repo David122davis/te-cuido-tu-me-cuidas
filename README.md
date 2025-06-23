@@ -86,4 +86,23 @@ global.scss           # Estilos globales
 
 ---
 
+Parte B
+
+Nueva funcionalidad: Tab 4
+
+Se ha agregado una nueva pestaña (tab4) a la aplicación.
+
+Ubicación:
+- `src/app/tab4/`
+
+Características:
+- Interfaz propia conectada al sistema de navegación por pestañas (`tabs.page.html`).
+- Puede usarse para mostrar información adicional, estadísticas, o configuración de usuario (según necesidad).
+
+Cómo acceder:
+La pestaña está disponible desde la barra inferior de navegación junto a `Tab1`, `Tab2`, y `Tab3`.
+
+Estado:
+Integrado y funcional en la estructura principal de Ionic con rutas configuradas.
+
 Desarrollado por David Elizalde
